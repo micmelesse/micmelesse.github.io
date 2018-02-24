@@ -5,7 +5,7 @@ var geometry = new THREE.BoxGeometry(1, 1, 1);
 var material = new THREE.MeshBasicMaterial({
   color: 0xff0000
 });
-renderer.setSize(320, 240)
+renderer.setSize(320,240)
 var cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 camera.position.z = 5;

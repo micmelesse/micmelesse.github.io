@@ -4,22 +4,62 @@
 <head>
   <meta charset=utf-8>
   <title>Michael Melesse</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid #e7e7e7;
+      background-color: #f3f3f3;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #ddd;
+    }
+
+    li a.active {
+      color: white;
+      background-color: #4CAF50;
+    }
+  </style>
 </head>
 
 <body>
-  <div style="width: 100%; overflow: hidden;">
-    <div style="width: 25%; float: left;">
-      My name is Michael Melesse, and this is my personal website. You can find my resume
-      <a href="res/resume.pdf">here</a>. See my
-      <a href="https://github.com/micmelesse">github</a> if interested in in seeing projects that I have done or would like to see a coding sample.
+  <ul>
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#demo">Demo</a>
+    </li>
+  </ul>
+
+  <div style="width: 50%; overflow: scroll; padding: 10px">
+    <div style="width: 250px; float: left;">
+      <img src="res/head_shot.jpg" class="img" width="240">
     </div>
     <div>
-      <img src="res/pic_1.jpg" class="img" width="480">
+      My name is Michael Melesse, and this is my personal website. You can find my resume
+      <a href="https://drive.google.com/open?id=1VaIlY4N3O-HA5wupYtQmuUa-WbTClsSj">here</a>. See my
+      <a href="https://github.com/micmelesse">github</a> if interested in in seeing projects that I have done or would like to see a coding sample.
     </div>
-    <div style="width: 100%; overflow: hidden;">
-      <script src="js/three.js"></script>
-      <script src="js/cube.js"></script>
-    </div>
+  </div>
+
+  <script src="js/three.js"></script>
+  <script src="js/cube.js"></script>
 </body>
 
 </html>
